@@ -1,0 +1,307 @@
+
+/*Google fonts*/
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+
+
+/*the box model fix*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*root selecting*/
+
+:root{
+ font-size: 16px;
+}
+
+body{
+ margin: 0;
+}
+
+ /*Base styles*/
+
+body{
+ font-family: 'Open Sans', sans-serif;
+}
+
+header{
+  max-width: 100%;
+  height: calc(100vh - 15.625em);
+  text-align: center;
+  color: white;
+  padding-top: 15.625em;
+  background: linear-gradient(#ffa949, transparent 90%),
+              linear-gradient(0deg, #fff, transparent),
+            orange url('../img/dhoni3.jpg') no-repeat center/cover;
+ 
+}
+
+header span{
+	font-size: 1.875em;
+	padding-bottom: 1.25em;
+	border-bottom: 2px solid;
+	text-transform: capitalize;
+}
+
+header p{
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	margin-top: 3.125rem;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+header img{
+	margin-top: 3.125rem;
+	width: 3.75rem;
+}
+
+.about{
+	border-top: 1px solid rgba(0,0,0,0.3);
+	padding: 10%;
+	padding-top: 4%;
+	margin-top: 1.25rem; 
+	text-align: center;
+	color: rgba(0,0,0,0.5);
+	line-height: 1.5625em;
+	word-spacing: 0.3125rem;
+	font-weight: bold;
+}
+
+.wrapper{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
+#findout{
+	display: inline-block;
+	text-align: center;
+	color: orange;
+	opacity: 0.5;
+	text-decoration: none;
+	margin-top: 0.625rem; 
+	font-size: 1.25rem;
+	padding: 0.625rem;
+	border-bottom: 2px solid orange;
+	transition-duration: .5s;
+}
+
+
+#img-div{
+  border-top: 0.625rem solid orange;
+  background: rgba(43, 13, 20, 0.05);
+  padding: 1.25rem;
+  box-shadow: 10px 10px 5px 5px grey;
+  border-radius: 0.5rem;
+  margin-bottom: 6.25rem;
+}
+
+#image{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;
+}
+
+#img-caption{
+	text-align: justify;
+	padding-right: 0.625rem;
+	font-size: 1.0625rem;
+	line-height: 1.875rem;
+}
+
+/*grid-styling*/
+
+#tribute-info{
+	padding: 1.25rem;
+	margin-top: 9.375rem;
+	display: grid;
+	grid-template-columns: repeat(2,minmax(auto-fit,1fr)); 
+	grid-template-rows: repeat(3,minmax(auto-fit,1fr));
+	grid-template-areas: 
+	"international test"
+	"odi t20"
+	"awards awards"
+	 ;
+	 grid-gap: 1.25rem;
+	 box-shadow:inset 5px 15px rgba(0,0,0,0.3);
+	 background-color:  rgba(100, 100, 100, 0.06);
+}
+aside{
+	border: 1px solid rgba(0,0,0,0.06);
+	padding: 0.625rem;
+}
+ul{
+	display: inline-block;
+	list-style-type: none;
+	padding: 1.25rem;
+	text-align: justify;
+	line-height: 1.5625rem;
+}
+ul li{
+	margin-bottom: 0.5rem;
+}
+
+#international{
+  grid-area: international;
+}
+#test{
+	grid-area: test;
+}
+#odi{
+	grid-area: odi;
+}
+#t20{
+	grid-area: t20;
+}
+#awards{
+	grid-area: awards;
+	text-align: center;
+}
+
+
+
+/*footer styling*/
+
+#tribute-link{
+	font-size: 1.25rem;
+	display: block;
+	text-transform:uppercase;
+	color: orange;
+	text-decoration: none; 
+	text-align: center;
+	padding: 1.25rem;
+	margin-top: 3.125rem;
+	margin-bottom: 6.25rem;
+	border-bottom: 2px solid rgba(255,165,0);
+	opacity: 0.5;
+}
+
+blockquote {
+  background: #fff;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+
+footer{
+	background:  rgba(0, 0, 0, 0.5);
+	border-bottom: 15px solid rgba(255,165,0,0.7);
+}
+
+
+.main-footer{
+	text-align: center;
+}
+.main-footer a{
+	margin-top: 0;
+   opacity: 0.8;
+}
+.main-footer h3{
+	color: rgba(0,0,0,0.7);
+}
+
+
+.social_media{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.fab{
+	padding:3.125rem;
+	color: rgba(0,0,0,0.7);
+	font-size: 1.875rem;
+}
+
+
+/*Seudo classes*/
+
+#findout:hover,
+#tribute-link:hover{
+	opacity: 1;
+}
+
+a:link{
+	color: blue;
+	text-decoration: none;
+}
+a:visited{
+	color: white;
+}
+a:hover{
+	color: yellow;
+}
+a:active{
+	color: red;
+}
+
+.fab:hover{
+  color: lightblue;
+}
+
+/*Media queries*/
+
+@media(max-width: 599px) {
+ header span{
+ 	border-bottom: none;
+ }
+}
+
+@media(max-width: 547px) {
+ header{
+ 	height: 100vh;
+ }
+ header span{
+   border-bottom: none;
+ }
+ header img{
+ 	display: none;
+ }
+ #tribute-info{
+ 	grid-column: 1fr;
+ 	grid-template-areas: 
+ 	"international"
+ 	"test"
+ 	"odi"
+ 	"t20"
+ 	"awards"
+ 	;
+ }
+}
+
+
+
+
+/*Float clearfix*/
+.group:after{
+	content: "";
+	display: table;
+	clear: both;
+}
